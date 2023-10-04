@@ -1,0 +1,35 @@
+portfolios:
+  - portfolio_name: blueprint-portfolio
+    owner: Blueprint-team
+    provider_name: AWS
+    description: "Blueprint portfolio "
+    portfolio_access_roles:
+       - arn:aws:iam:::role/ServiceCatalogEndUserRole
+       - arn:aws:iam::831932040055:role/admin1
+       - arn:aws:iam::561764939519:role/admin
+    share_to_ou:
+     - org_id: "o-388upojba9"
+    stack_tags:
+      DataClassification: Confidential
+      Organization: AWS
+products:
+  - name: BP-S3-Product
+    description: "Blueprint for BP-S3 product"
+    product_config_file: "BP-S3/product_config.json"
+    owner: Blueprint-team
+    stack_tags:
+      DataClassification: Confidential
+      Organization: AWS
+    portfolio_associations:
+      - blueprint-portfolio
+    launch_contraint_role: arn:aws:iam:::role/ServiceCatalogLaunchConstraintRole
+  - name: BP-SNS-Product
+    description: "Blueprint for BP-SNS product"
+    product_config_file: "BP-SNS/product_config.json"
+    owner: Blueprint-team
+    stack_tags:
+      DataClassification: Confidential
+      Organization: AWS
+    portfolio_associations:
+      - blueprint-portfolio
+    launch_contraint_role: arn:aws:iam:::role/ServiceCatalogLaunchConstraintRole
