@@ -4,11 +4,10 @@ portfolios:
     provider_name: AWS
     description: "Blueprint portfolio "
     portfolio_access_roles:
-       - arn:aws:iam:::role/ServiceCatalogEndUserRole
-       - arn:aws:iam::831932040055:role/admin1
-       - arn:aws:iam::561764939519:role/admin
+       - arn:aws:iam::123456789012:role/examplerole
+       - arn:aws:iam::123456789012:user/exampleuser
     share_to_ou:
-     - org_id: "o-388upojba9"
+     - org_id: "o-exampleOrgID"
     stack_tags:
       DataClassification: Confidential
       Organization: AWS
