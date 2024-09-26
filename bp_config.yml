@@ -22,13 +22,13 @@ products:
   #   portfolio_associations:
   #     - blueprint-portfolio
   #   launch_contraint_role: arn:aws:iam:::role/ServiceCatalogLaunchConstraintRole
-  # - name: BP-SNS-Product
-  #   description: "Blueprint for BP-SNS product"
-  #   product_config_file: "BP-SNS/product_config.json"
-  #   owner: Blueprint-team
-  #   stack_tags:
-  #     DataClassification: Confidential
-  #     Organization: AWS
-  #   portfolio_associations:
-  #     - blueprint-portfolio
-  #   launch_contraint_role: arn:aws:iam:::role/ServiceCatalogLaunchConstraintRole
+  - name: BP-SNS-Product
+    description: "Blueprint for BP-SNS product"
+    product_config_file: "BP-SNS/product_config.json"
+    owner: Blueprint-team
+    stack_tags:
+      DataClassification: Confidential
+      Organization: AWS
+    portfolio_associations:
+      - blueprint-portfolio
+    launch_contraint_role: arn:aws:iam:::role/ServiceCatalogLaunchConstraintRole
